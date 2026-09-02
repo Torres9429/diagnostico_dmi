@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Productos</title>
+    <link rel='stylesheet' href='main.css'>
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="title">Nuestros productos</h1>
+        <div id="search-component"></div>
+        <div class="grid text-center" id="grid_products">
+            <div class="g-col-6"><img class="img-thumbnail" src="assets/headphones.jpg" alt=""> <p class="card-text">Productito</p>
+                <p class="card-text">⭐⭐⭐⭐⭐</p></div>
+            <div class="g-col-6"><img class="img-thumbnail" src="assets/img2.jpeg" alt=""> <p class="card-text">Productito</p>
+                <p class="card-text">⭐⭐⭐⭐⭐</p></div> 
+            <div class="g-col-6"><img class="img-thumbnail" src="assets/headphones.jpg" alt=""> <p class="card-text">Productito</p>
+                <p class="card-text">⭐⭐⭐⭐⭐</p></div>
+            <div class="g-col-6"><img class="img-thumbnail" src="assets/img2.jpeg" alt=""> <p class="card-text">Productito</p>
+                <p class="card-text">⭐⭐⭐⭐⭐</p></div> 
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script>
+        let grid_products = document.getElementsById("grid_products");
+        grid_products.innerHTML = `
+            <div class="card" style="width: 18rem;">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text"></p>
+                <p class="card-text">⭐⭐⭐⭐⭐</p>
+            </div>
+            </div>
+        `;
+    </script>
+</body>
+
+</html>
